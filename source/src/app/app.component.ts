@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'sampleNg';
   myTeam : Array<Team>;
-  
+  IsActive : any;
 
   constructor(private _appService : AppService) {
   }
@@ -31,6 +31,7 @@ export class AppComponent {
   }
   
   btnClick() {
+    this.IsActive=true;
     alert('Button Clicked' );
   }
 
