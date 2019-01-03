@@ -14,8 +14,9 @@ const routes: Routes = [
     component: AboutComponent 
   },
   { 
-    path: '', 
-    component: HomeComponent 
+    path: '',
+    redirectTo:'/home',
+    pathMatch:'full' 
   }
 ];
 
