@@ -10,6 +10,7 @@ import { HomeService } from '../home.service';
 export class HomeComponent implements OnInit {
   myTeam : Array<Team>;
   IsActive : any;
+  title = 'sampleNg';
   constructor(private _homeService : HomeService) {
   }
 
