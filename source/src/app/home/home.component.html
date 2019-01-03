@@ -1,4 +1,4 @@
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid" style="text-align:center">
   <h1 class="display-4">Welcome to {{ title }}!</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
@@ -7,13 +7,15 @@
 </div>
 
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
+<div class="container">
   <h2>Sample Json Parsing: </h2>
    <ul class="col-md-4 list-group">
      <li (selected)=btnClick() class="list-group-item" [class.active]=IsActive *ngFor="let t of myTeam">{{t.Name}}</li>
-    </ul>
+   </ul>
+
+  <div>
+   <button (click)=btnClick() class="btn btn-primary">Click</button>
+  </div>
 </div>
-<div>
-  <button (click)=btnClick() class="btn btn-primary">Click</button>
-</div>
+
 
